@@ -74,7 +74,8 @@ router.delete("/customer", (req, res) => {
 });
 // GET ALL CUSTOMERS
 router.get("/customer/:all", (req, res) => {
-  CustomerModel.find({}).sort({_id: -1})
+  CustomerModel.find({})
+    .sort({ _id: -1 })
     .then(doc => {
       res.json(doc);
     })

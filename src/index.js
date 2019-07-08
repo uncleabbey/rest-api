@@ -5,8 +5,7 @@ let customerRoute = require("./routes/customer");
 let path = require("path");
 let bodyParser = require("body-parser");
 let cors = require("cors");
-require('dotenv').config()
-
+require("dotenv").config();
 
 let app = express();
 app.use(cors());
